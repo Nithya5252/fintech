@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fintech Platform</h1>
+
+        <div class="account-info">
+            <h2>Account Information</h2>
+            <p id="account-balance">Balance: $0.00</p>
+        </div>
+
+        <div class="transaction-form">
+            <h2>Deposit/Withdrawal</h2>
+            <form id="transaction-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+                <button type="button" onclick="performTransaction('deposit')">Deposit</button>
+                <button type="button" onclick="performTransaction('withdraw')">Withdraw</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="server.js"></script>
+</body>
+</html>
